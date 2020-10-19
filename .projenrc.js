@@ -7,7 +7,8 @@ const project = new ConstructLibraryCdk8s({
   name: "cdk8s-image",
   description: 'CDK8s docker image construct',
   repository: "git@github.com:eladb/cdk8s-image.git",
-  defaultReleaseBranch: 'main'
+  defaultReleaseBranch: 'main',
+  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN'
 });
 
 project.addPeerDependencies({
