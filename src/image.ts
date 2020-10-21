@@ -45,7 +45,9 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(Node.of(this).path)}`;
+    console.error(`building docker image "${props.dir}"...`);
     shell('docker', 'build', '-t', tag, props.dir);
+    console.error(`pushing docker image "${props.dir}"...`);
     const push = shell('docker', 'push', tag);
 
     const result = PARSE_DIGEST.exec(push);
