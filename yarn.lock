@@ -1697,7 +1697,7 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
-deep-equal@^2.0.3:
+deep-equal@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-2.0.4.tgz#6b0b407a074666033169df3acaf128e1c6f3eab6"
   integrity sha512-BUfaXrVoCfgkOQY/b09QdO9L3XNoF2XH0A3aY9IQwQL/ZjLOe8FQgCNVl1wiolhsFo8kFdO9zdPViCPbmaJA5w==
@@ -3654,14 +3654,14 @@ jsii-rosetta@^1.14.0:
     yargs "^16.1.0"
 
 jsii@^1.11.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.13.0.tgz#8a2ac2f60cd666d0ed76dc39204321caa7c9c775"
-  integrity sha512-SA4YEegodByqI04BrRbR29QE+MGHGVQ5wG7byLDjVle0zRfRaJYc2nH13Jy4nhkC1aqBkRwHI9atKUrNDiNa0w==
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.14.0.tgz#75fc3b2aa2645926a7e432df8d94c1fecdd9d6c9"
+  integrity sha512-6vW8sdVu3S5t3kVVI7d9hzxhZ8wqz4J3mHBMArbL/qJpUVB3ruF2W0RVPKwi16u4hnYNqE29TbSq+H5qdepKqg==
   dependencies:
-    "@jsii/spec" "^1.13.0"
+    "@jsii/spec" "^1.14.0"
     case "^1.6.3"
     colors "^1.4.0"
-    deep-equal "^2.0.3"
+    deep-equal "^2.0.4"
     fs-extra "^9.0.1"
     log4js "^6.3.0"
     semver "^7.3.2"
@@ -3669,7 +3669,7 @@ jsii@^1.11.0:
     sort-json "^2.0.0"
     spdx-license-list "^6.3.0"
     typescript "~3.9.7"
-    yargs "^16.0.3"
+    yargs "^16.1.0"
 
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
