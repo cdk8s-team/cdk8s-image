@@ -1,0 +1,28 @@
+name: update pr
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  update_pr_branch:
+    name: PR comment
+    if: ${{ github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello! ${{ github.event.issue.comment.body }}"
+#      - uses: actions/checkout@v2
+#      - run: yarn install --frozen-lockfile
+#      - run: yarn projen
+#      - run: yarn build
+#      
+#      - name: Commit files
+#        run: |
+#          git config --local user.email "action@github.com"
+#          git config --local user.name "GitHub Action"
+#          git commit -m "Add changes" -a
+#      - name: Push changes
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: ${{ github.ref }}      
+  
