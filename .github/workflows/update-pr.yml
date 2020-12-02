@@ -9,7 +9,7 @@ jobs:
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello! ${{ github.event.issue.comment.body }}"
+      - run: echo "hello! ${{ github.event.issue_comment }}"
 #      - uses: actions/checkout@v2
 #      - run: yarn install --frozen-lockfile
 #      - run: yarn projen
