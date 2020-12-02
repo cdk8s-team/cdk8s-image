@@ -11,7 +11,7 @@ jobs:
     steps:
       - run: echo "hello! $COMMENT"
         env:
-          COMMENT: ${{ github.event.issue.comment }}
+          COMMENT: ${{ toJson(github.event) }}
 #      - uses: actions/checkout@v2
 #      - run: yarn install --frozen-lockfile
 #      - run: yarn projen
