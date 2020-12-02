@@ -9,20 +9,17 @@ jobs:
     if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '@projen update') }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello!"
-#      - uses: actions/checkout@v2
-#      - run: yarn install --frozen-lockfile
-#      - run: yarn projen
-#      - run: yarn build
-#      
-#      - name: Commit files
-#        run: |
-#          git config --local user.email "action@github.com"
-#          git config --local user.name "GitHub Action"
-#          git commit -m "Add changes" -a
-#      - name: Push changes
-#        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          branch: ${{ github.ref }}      
-  
+      - uses: actions/checkout@v2
+      - run: yarn install --frozen-lockfile
+      - run: yarn projen
+      - run: yarn build
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "chore: generate files" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
