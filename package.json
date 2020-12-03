@@ -50,7 +50,7 @@
     "jsii-pacmak": "^1.11.0",
     "jsii-release": "^0.1.6",
     "json-schema": "^0.2.5",
-    "projen": "^0.3.172",
+    "projen": "^0.3.173",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
@@ -65,9 +65,6 @@
   "keywords": [
     "cdk"
   ],
-  "engines": {
-    "node": ">= 10.17.0"
-  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "start": {
