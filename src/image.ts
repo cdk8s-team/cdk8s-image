@@ -1,5 +1,5 @@
 import { Names } from 'cdk8s';
-import { Construct, Node } from 'constructs';
+import { Construct } from 'constructs';
 import { shell } from './_shell';
 
 const PARSE_DIGEST = /digest:\ (sha256:[0-9a-f]+)/;
@@ -44,7 +44,7 @@ export class Image extends Construct {
   constructor(scope: Construct, id: string, props: ImageProps) {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
-    const tag = `${registry}/${Names.toDnsLabel(Node.of(this).path)}`;
+    const tag = `${registry}/${Names.toDnsLabel(this)}`;
     console.error(`building docker image "${props.dir}"...`);
     shell('docker', 'build', '-t', tag, props.dir);
     console.error(`pushing docker image "${props.dir}"...`);
