@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.60 (2020-12-06)
+
+
+### Bug Fixes
+
+* upgrade to cdk8s 1.0.0-beta ([#95](https://github.com/eladb/cdk8s-image/issues/95)) ([6e5ff86](https://github.com/eladb/cdk8s-image/commit/6e5ff86151145e706473e9cc19a57155621e8215)), closes [#92](https://github.com/eladb/cdk8s-image/issues/92)
+
 ### 0.1.59 (2020-12-04)
 
 ### 0.1.58 (2020-12-03)
