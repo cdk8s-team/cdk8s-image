@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.99](https://github.com/eladb/cdk8s-image/compare/v0.1.97...v0.1.99) (2021-01-06)
+
 ### [0.1.98](https://github.com/eladb/cdk8s-image/compare/v0.1.97...v0.1.98) (2021-01-05)
 
 ### [0.1.97](https://github.com/eladb/cdk8s-image/compare/v0.1.95...v0.1.97) (2021-01-05)
