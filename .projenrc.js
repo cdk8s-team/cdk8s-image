@@ -9,6 +9,11 @@ const project = new ConstructLibraryCdk8s({
   repository: 'git@github.com:eladb/cdk8s-image.git',
   defaultReleaseBranch: 'main',
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
+  autoApproveOptions: {
+    allowedUsernames: ['cdk8s-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
+  autoApproveUpgrades: true,
 });
 
 project.synth();
