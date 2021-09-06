@@ -1,8 +1,8 @@
 const { ConstructLibraryCdk8s } = require('projen');
 
 const project = new ConstructLibraryCdk8s({
-  authorAddress: 'benisrae@amazon.com',
-  authorName: 'Elad Ben-Israel',
+  authorUrl: 'https://aws.amazon.com',
+  authorName: 'Amazon Web Services',
   cdk8sVersion: '1.0.0-beta.3',
   name: 'cdk8s-image',
   description: 'CDK8s docker image construct',

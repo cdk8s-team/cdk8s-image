@@ -26,8 +26,8 @@
     "start": "npx projen start"
   },
   "author": {
-    "name": "Elad Ben-Israel",
-    "email": "benisrae@amazon.com",
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com",
     "organization": false
   },
   "devDependencies": {
