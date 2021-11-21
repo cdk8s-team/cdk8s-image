@@ -1,9 +1,9 @@
 {
   "name": "cdk8s-image",
-  "description": "CDK8s docker image construct",
+  "description": "Build & Push local docker images inside CDK8s applications",
   "repository": {
     "type": "git",
-    "url": "git@github.com:eladb/cdk8s-image.git"
+    "url": "git@github.com:cdk8s-team/cdk8s-image.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -38,9 +38,8 @@
     "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
-    "cdk8s": "1.0.0-beta.3",
-    "cdk8s-plus-17": "1.0.0-beta.3",
-    "constructs": "3.2.34",
+    "cdk8s": "1.1.39",
+    "constructs": "3.3.161",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -59,14 +58,10 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdk8s": "^1.0.0-beta.3",
-    "cdk8s-plus-17": "^1.0.0-beta.3",
-    "constructs": "^3.2.34"
+    "cdk8s": "^1.1.39",
+    "constructs": "^3.3.161"
   },
   "bundledDependencies": [],
-  "keywords": [
-    "cdk"
-  ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",

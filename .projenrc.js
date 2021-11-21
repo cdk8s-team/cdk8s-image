@@ -1,12 +1,15 @@
-const { ConstructLibraryCdk8s } = require('projen');
+const { JsiiProject } = require('projen');
 
-const project = new ConstructLibraryCdk8s({
+const project = new JsiiProject({
   authorUrl: 'https://aws.amazon.com',
   authorName: 'Amazon Web Services',
-  cdk8sVersion: '1.0.0-beta.3',
+  peerDeps: [
+    'constructs',
+    'cdk8s',
+  ],
   name: 'cdk8s-image',
-  description: 'CDK8s docker image construct',
-  repository: 'git@github.com:eladb/cdk8s-image.git',
+  description: 'Build & Push local docker images inside CDK8s applications',
+  repository: 'git@github.com:cdk8s-team/cdk8s-image.git',
   defaultReleaseBranch: 'main',
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   autoApproveOptions: {
