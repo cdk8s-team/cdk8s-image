@@ -62,6 +62,12 @@
     "constructs": "^3.3.161"
   },
   "bundledDependencies": [],
+  "keywords": [
+    "cdk8s",
+    "containers",
+    "docker",
+    "kubernetes"
+  ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",

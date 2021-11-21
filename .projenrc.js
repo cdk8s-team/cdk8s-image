@@ -3,6 +3,12 @@ const { JsiiProject } = require('projen');
 const project = new JsiiProject({
   authorUrl: 'https://aws.amazon.com',
   authorName: 'Amazon Web Services',
+  keywords: [
+    'cdk8s',
+    'docker',
+    'containers',
+    'kubernetes',
+  ],
   peerDeps: [
     'constructs',
     'cdk8s',
