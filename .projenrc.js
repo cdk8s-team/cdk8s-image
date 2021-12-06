@@ -1,6 +1,6 @@
-const { JsiiProject } = require('projen');
+const { cdk } = require('projen');
 
-const project = new JsiiProject({
+const project = new cdk.JsiiProject({
   authorUrl: 'https://aws.amazon.com',
   authorName: 'Amazon Web Services',
   keywords: [
