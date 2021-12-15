@@ -25,7 +25,7 @@ push`. The URL of the pushed image can be accessed through `image.url`.
 If you push to a registry other then docker hub, you can specify the registry
 URL through the `registry` option.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Extends__: [Construct](#constructs-construct)
 
 ### Initializer
