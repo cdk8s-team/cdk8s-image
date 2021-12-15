@@ -14,6 +14,7 @@ const project = new cdk.JsiiProject({
     'cdk8s',
   ],
   name: 'cdk8s-image',
+  minNodeVersion: '14.17.0',
   description: 'Build & Push local docker images inside CDK8s applications',
   repository: 'https://github.com/cdk8s-team/cdk8s-image',
   defaultReleaseBranch: 'main',
