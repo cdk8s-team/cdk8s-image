@@ -10,7 +10,7 @@ const project = new cdk.JsiiProject({
     'kubernetes',
   ],
   peerDeps: [
-    'constructs@^10',
+    'constructs',
     'cdk8s',
   ],
   name: 'cdk8s-image',
