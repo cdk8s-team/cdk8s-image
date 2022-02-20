@@ -1280,9 +1280,9 @@ browser-process-hrtime@^1.0.0:
   integrity sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==
 
 browserslist@^4.17.5:
-  version "4.19.2"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.19.2.tgz#9ba98791192a39e1242f0670bb265ceee1baf0a4"
-  integrity sha512-97XU1CTZ5TwU9Qy/Taj+RtiI6SQM1WIhZ9osT7EY0oO2aWXGABZT2OZeRL+6PfaQsiiMIjjwIoYFPq4APgspgQ==
+  version "4.19.3"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.19.3.tgz#29b7caad327ecf2859485f696f9604214bedd383"
+  integrity sha512-XK3X4xtKJ+Txj8G5c30B4gsm71s69lqXlkYui4s6EkKxuv49qjYlY6oVd+IFJ73d4YymtM3+djvvt/R/iJwwDg==
   dependencies:
     caniuse-lite "^1.0.30001312"
     electron-to-chromium "^1.4.71"
@@ -1415,10 +1415,10 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk8s@1.5.20:
-  version "1.5.20"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-1.5.20.tgz#eabe8a1129f3056d37bc6e6ac62a92c8f8bb3719"
-  integrity sha512-SBcX7mUsv9LbYr1zyrYcqJu+FoAELgQ1Jgi9dikNT21DVYyorIeZ/0uJYzfjzBmr6jSZOaswdzZ9keT8KFYnuA==
+cdk8s@1.5.21:
+  version "1.5.21"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-1.5.21.tgz#64623b10c60aa5e055e065557be7b09cd0aecac1"
+  integrity sha512-thpC1LWveFwJMYWcQwu9+Md6eVrUEVmsHUInzpTqLF6+CAUqjuTiSnvlOTZ2PA+lSS1c/WTPu6x2EgIOwvBH2g==
   dependencies:
     fast-json-patch "^2.2.1"
     follow-redirects "^1.14.9"
@@ -1627,10 +1627,10 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
-constructs@3.3.220:
-  version "3.3.220"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.220.tgz#ade94fe964dff4ec51dbe508ee8b8beda7fce199"
-  integrity sha512-ZizJd6pyCGLFx+Z0unt+xgJlKSrt9DaR/x3Cc1Y/4HhZLXRJEH18e0CsbIpnDD61kGz8zWdhZRVrKh24t5OXUA==
+constructs@3.3.222:
+  version "3.3.222"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.222.tgz#9be9eb5c245d2c0c1cdd7b08f32000701c389861"
+  integrity sha512-RibAgTW5Kn5pxKMplctk2scAmAHSAZ3ksiYp+P04Tqbs+Xo/UXbDrqXhakYzJOfTutBfh2NhXzcK8imhAt+c7g==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -5246,10 +5246,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.52.35:
-  version "0.52.35"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.35.tgz#907066ba3ca86d4c24bbbd4fa8b774323bc3e221"
-  integrity sha512-ugjJc81SIv1YBcqCJSHMSILiujupApMA6Qj0Xv80qJrFHWGc1yO0UOEyVErL1k1qNpdpYtZ26kwgxqJu1Be59g==
+projen@^0.52.36:
+  version "0.52.36"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.36.tgz#77a928428d87c164e1c4786bb7130959005a99fd"
+  integrity sha512-zMJuBejy8vnfzIK++28z/nEH9r+jFdPafD9TJsthazoDS/A/AAmdIvqoy9W/UMDUOjUu3bAh/cVE6aCU8W+NIw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
