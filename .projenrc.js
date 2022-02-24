@@ -24,6 +24,11 @@ const project = new cdk.JsiiProject({
     secret: 'GITHUB_TOKEN',
   },
   autoApproveUpgrades: true,
+
+  publishToPypi: {
+    distName: 'cdk8s-image',
+    module: 'cdk8s_image',
+  },
 });
 
 project.synth();
