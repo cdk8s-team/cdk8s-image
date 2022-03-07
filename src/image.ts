@@ -5,6 +5,21 @@ import { shell } from './_shell';
 const PARSE_DIGEST = /digest:\ (sha256:[0-9a-f]+)/;
 
 /**
+ * Build arg to pass to the docker build
+ */
+export interface BuildArg {
+  /**
+   * the name of the build arg
+   */
+  readonly name: string;
+
+  /**
+   * the value of the build arg
+   */
+  readonly value: string;
+}
+
+/**
  * Props for `Image`.
  */
 export interface ImageProps {
@@ -23,6 +38,11 @@ export interface ImageProps {
    * @default "docker.io/library"
    */
   readonly registry?: string;
+
+  /**
+   * List of build args to pass to the build action
+   */
+  readonly buildArgs?: BuildArg[];
 }
 
 /**
@@ -45,8 +65,9 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(this)}`;
+    const buildArgs = props.buildArgs?.map(arg => `--build-arg ${arg.name}=${arg.value}`) ?? [];
     console.error(`building docker image "${props.dir}"...`);
-    shell('docker', 'build', '-t', tag, props.dir);
+    shell('docker', 'build', '-t', tag, props.dir, ...buildArgs);
     console.error(`pushing docker image "${props.dir}"...`);
     const push = shell('docker', 'push', tag);
 
