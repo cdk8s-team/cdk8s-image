@@ -1,5 +1,5 @@
 {
-  "name": "cdk8s-image",
+  "name": "udp-cdk8s-image",
   "description": "Build & Push local docker images inside CDK8s applications",
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:js": "npx projen package:js",
+    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -118,7 +119,12 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "python": {
+        "distName": "udp-cdk8s-image",
+        "module": "udp_cdk8s_image"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
