@@ -11,6 +11,7 @@ Name|Description
 
 Name|Description
 ----|-----------
+[BuildArg](#cdk8s-image-buildarg)|Build arg to pass to the docker build.
 [ImageProps](#cdk8s-image-imageprops)|Props for `Image`.
 
 
@@ -41,6 +42,7 @@ new Image(scope: Construct, id: string, props: ImageProps)
 * **id** (<code>string</code>)  *No description*
 * **props** (<code>[ImageProps](#cdk8s-image-imageprops)</code>)  *No description*
   * **dir** (<code>string</code>)  The docker build context directory (where `Dockerfile` is). 
+  * **buildArgs** (<code>Array<[BuildArg](#cdk8s-image-buildarg)></code>)  List of build args to pass to the build action. __*Optional*__
   * **registry** (<code>string</code>)  The registry URL to use. __*Default*__: "docker.io/library"
 
 
@@ -54,6 +56,20 @@ Name | Type | Description
 
 
 
+## struct BuildArg  <a id="cdk8s-image-buildarg"></a>
+
+
+Build arg to pass to the docker build.
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | the name of the build arg.
+**value** | <code>string</code> | the value of the build arg.
+
+
+
 ## struct ImageProps  <a id="cdk8s-image-imageprops"></a>
 
 
@@ -64,6 +80,7 @@ Props for `Image`.
 Name | Type | Description 
 -----|------|-------------
 **dir** | <code>string</code> | The docker build context directory (where `Dockerfile` is).
+**buildArgs**? | <code>Array<[BuildArg](#cdk8s-image-buildarg)></code> | List of build args to pass to the build action.<br/>__*Optional*__
 **registry**? | <code>string</code> | The registry URL to use.<br/>__*Default*__: "docker.io/library"
 
 
