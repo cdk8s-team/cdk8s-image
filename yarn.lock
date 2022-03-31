@@ -1422,10 +1422,10 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk8s@1.5.56:
-  version "1.5.56"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-1.5.56.tgz#644ffddd1f2185e9679ad9ffae774f177e6e0371"
-  integrity sha512-CDbwGpLk7eopLgLY2IjxXmmWH34sg44/pRY5506ixzjBykLVR9nCqFTwtdcOuU+y3Hf+20kJV/MOijgzbaC7aA==
+cdk8s@1.5.57:
+  version "1.5.57"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-1.5.57.tgz#5f4db9c98ba2d2a5a1062240db03c06adbc3d70d"
+  integrity sha512-e8xsAw32SSpnkOVR6n8HCW7V2j/PczjfdbF7EymQxK0BCRSE2O9zNIJoERXRPnAoyhPVQ1hXnSEY3lYhXET11w==
   dependencies:
     fast-json-patch "^2.2.1"
     follow-redirects "^1.14.9"
@@ -1658,10 +1658,10 @@ console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
-constructs@3.3.253:
-  version "3.3.253"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.253.tgz#6f849901a035faddb2d9e187f4cfe337b5722870"
-  integrity sha512-GUdGIi27TtyQ4yvnodOkwyJpbNjnSAudbE3keexrDCeggP/7ZKjANXBH3FLPsca/5tEggK/iJDQdAI6pZ+PHMw==
+constructs@3.3.254:
+  version "3.3.254"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.254.tgz#82e0fd7d081b21c80de3ec7c49f75f19fd130de4"
+  integrity sha512-BHxn3xjvRzlVmIv5zKeRUqJP2f/OYcWB0NKV9WOvOzaql0OcJfmQltKTfIMHrfCBteM+/z4MOVkjskJGz1W8jw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2133,9 +2133,9 @@ duplexer3@^0.1.4:
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
 electron-to-chromium@^1.4.84:
-  version "1.4.100"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.100.tgz#da82de8a19a47ea3dcdf141dde85355942fbc4e7"
-  integrity sha512-pNrSE2naf8fizl6/Uxq8UbKb8hU9EiYW4OzCYswosXoLV5NTMOUVKECNzDaHiUubsPq/kAckOzZd7zd8S8CHVw==
+  version "1.4.102"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.102.tgz#fec312f753bcd9b89396136147efdb8bbd55cc82"
+  integrity sha512-MuWg3/gLTk6PSjC7ZrTgT8aAYZmUYd+gRtD95vN77KMBwZXiGdHHa8Y7ppMc/zwNumZtoIBLS0rzZyjEHd7sNw==
 
 emittery@^0.7.1:
   version "0.7.2"
@@ -4402,9 +4402,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.3.1, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.7.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.2.tgz#9a31f924b96e0e238c1f981bf3fcc2563aafb5f0"
-  integrity sha512-WkdIOIF7HkfVHXxKLjhH6lyAxSFoSO5NZpZS9cH8Oe5rAI2ZDrVmIweDAZUHqIhl0zasQUprVVR8uv2yggYYvw==
+  version "7.7.3"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
+  integrity sha512-WY9wjJNQt9+PZilnLbuFKM+SwDull9+6IAguOrarOMoOHTcJ9GnXSO11+Gw6c7xtDkBkthR57OZMtZKYr+1CEw==
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5317,10 +5317,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.54.0:
-  version "0.54.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.54.0.tgz#c49a7fb153a5a3e0760f66b6ad1257d00bbfa1d3"
-  integrity sha512-wxm4v7zUe0xciEuMlBEP8vh63RwTgTnSEYzicG9bKBOgDw1knnQzjrK3SnQXutH9Gz36SwLrp0jucgMGr1UcCQ==
+projen@^0.54.1:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.54.1.tgz#c231e34b44c1bc27f694e9fc2d7572dc8efc1ccc"
+  integrity sha512-xIbfzGeuUKMtTNU5DHg5aMFpdwiBca7O53e6IYtj2oEMOoMKz74TrpegXq2Plez9pOwlJQqOUh8WiDPvzVSbtQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
