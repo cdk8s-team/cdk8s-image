@@ -65,7 +65,7 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(this)}`;
-    const buildArgs: string[] = []
+    const buildArgs: string[] = [];
     props.buildArgs?.forEach((arg) => {
       buildArgs.push('--build-arg');
       buildArgs.push(`${arg.name}=${arg.value}`);
