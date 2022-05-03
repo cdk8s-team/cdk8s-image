@@ -60,7 +60,7 @@ test('single build arg', () => {
   // THEN
   expect(image.url).toEqual('docker.io/library/test-my-image-c80f3600@sha256:a1b2c3');
   expect(mock).toBeCalledTimes(2);
-  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '--build-arg FOO=bar');
+  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '--build-arg', 'FOO=bar');
   expect(mock).toBeCalledWith('docker', 'push', 'docker.io/library/test-my-image-c80f3600');
 });
 
@@ -81,6 +81,6 @@ test('multiple build args', () => {
   // THEN
   expect(image.url).toEqual('docker.io/library/test-my-image-c80f3600@sha256:a1b2c3');
   expect(mock).toBeCalledTimes(2);
-  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '--build-arg FOO=bar', '--build-arg BAR=baz');
+  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '--build-arg', 'FOO=bar', '--build-arg', 'BAR=baz');
   expect(mock).toBeCalledWith('docker', 'push', 'docker.io/library/test-my-image-c80f3600');
 });
