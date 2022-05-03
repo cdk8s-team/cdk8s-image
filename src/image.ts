@@ -65,7 +65,12 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(this)}`;
-    const buildArgs = props.buildArgs?.map(arg => `--build-arg ${arg.name}=${arg.value}`) ?? [];
+    let buildArgs;
+    props.buildArgs?.forEach(arg => {
+      buildArgs.push('--build-arg');
+      buildArgs.push(`${arg.name}=${arg.value}`);
+    });
+    props.buildArgs?.map(arg => `--build-arg ${arg.name}=${arg.value}`) ?? [];
     console.error(`building docker image "${props.dir}"...`);
     shell('docker', 'build', '-t', tag, props.dir, ...buildArgs);
     console.error(`pushing docker image "${props.dir}"...`);
