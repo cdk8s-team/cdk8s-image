@@ -43,6 +43,11 @@ export interface ImageProps {
    * List of build args to pass to the build action
    */
   readonly buildArgs?: BuildArg[];
+
+  /**
+   * Path to Dockerfile
+   */
+  readonly file?: string;
 }
 
 /**
@@ -65,14 +70,18 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(this)}`;
-    const buildArgs: string[] = []
+    const imageArgs: string[] = [];
     props.buildArgs?.forEach((arg) => {
-      buildArgs.push('--build-arg');
-      buildArgs.push(`${arg.name}=${arg.value}`);
+      imageArgs.push('--build-arg');
+      imageArgs.push(`${arg.name}=${arg.value}`);
     });
-    console.error(`building docker image "${props.dir}"...`);
-    shell('docker', 'build', '-t', tag, props.dir, ...buildArgs);
-    console.error(`pushing docker image "${props.dir}"...`);
+    if (props.file) {
+      imageArgs.push('-f');
+      imageArgs.push(props.file);
+    }
+    console.error(`building docker image ${tag} from "${props.file ? props.file : props.dir}"...`);
+    shell('docker', 'build', '-t', tag, props.dir, ...imageArgs);
+    console.error(`pushing docker image ${tag} to ${registry}"...`);
     const push = shell('docker', 'push', tag);
 
     const result = PARSE_DIGEST.exec(push);
