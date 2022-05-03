@@ -70,18 +70,18 @@ export class Image extends Construct {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
     const tag = `${registry}/${Names.toDnsLabel(this)}`;
-    const imageArgs: string[] = [];
+    const allBuildArgs: string[] = [];
     props.buildArgs?.forEach((arg) => {
-      imageArgs.push('--build-arg');
-      imageArgs.push(`${arg.name}=${arg.value}`);
+      allBuildArgs.push('--build-arg');
+      allBuildArgs.push(`${arg.name}=${arg.value}`);
     });
     if (props.file) {
-      imageArgs.push('-f');
-      imageArgs.push(props.file);
+      allBuildArgs.push('-f');
+      allBuildArgs.push(props.file);
     }
-    console.error(`building docker image ${tag} from "${props.file ? props.file : props.dir}"...`);
-    shell('docker', 'build', '-t', tag, props.dir, ...imageArgs);
-    console.error(`pushing docker image ${tag} to ${registry}"...`);
+    console.error(`building docker image ${tag} from ${props.file ? props.file : props.dir}`);
+    shell('docker', 'build', '-t', tag, props.dir, ...allBuildArgs);
+    console.error(`pushing docker image ${tag} to ${registry}`);
     const push = shell('docker', 'push', tag);
 
     const result = PARSE_DIGEST.exec(push);
