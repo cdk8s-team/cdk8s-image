@@ -103,3 +103,21 @@ test('dockerfile specified', () => {
   expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '-f', './test/Dockerfile') ;
   expect(mock).toBeCalledWith('docker', 'push', 'docker.io/library/test-my-image-c80f3600');
 });
+
+test('platform specified', () => {
+  // GIVEN
+  const mock = jest.spyOn(shell, 'shell').mockReturnValue('text\ntext\n\ndigest: sha256:a1b2c3\n');
+  const chart = Testing.chart();
+
+  // WHEN
+  const image = new Image(chart, 'my-image', {
+    dir: 'foobar',
+    platform: 'linux/x86_64',
+  });
+
+  // THEN
+  expect(image.url).toEqual('docker.io/library/test-my-image-c80f3600@sha256:a1b2c3');
+  expect(mock).toBeCalledTimes(2);
+  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600', 'foobar', '--platform=linux/x86_64') ;
+  expect(mock).toBeCalledWith('docker', 'push', 'docker.io/library/test-my-image-c80f3600');
+});
