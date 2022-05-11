@@ -48,6 +48,11 @@ export interface ImageProps {
    * Path to Dockerfile
    */
   readonly file?: string;
+  
+  /**
+   * Set to specify the target platform for the build output, (for example, linux/amd64, linux/arm64, or darwin/amd64).
+   */
+  readonly platform?: string;
 }
 
 /**
@@ -78,6 +83,9 @@ export class Image extends Construct {
     if (props.file) {
       allBuildArgs.push('-f');
       allBuildArgs.push(props.file);
+    }
+    if (props.platform) {
+      allBuildArgs.push(`--platform=${props.platform}`);
     }
     console.error(`building docker image ${tag} from ${props.file ? props.file : props.dir}`);
     shell('docker', 'build', '-t', tag, props.dir, ...allBuildArgs);
