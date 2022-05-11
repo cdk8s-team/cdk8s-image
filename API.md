@@ -86,3 +86,4 @@ Name | Type | Description
 **file**? | <code>string</code> | Path to Dockerfile.<br/>__*Optional*__
 **platform**? | <code>string</code> | Set to specify the target platform for the build output.<br/>__*Optional*__
 **registry**? | <code>string</code> | The registry URL to use.<br/>__*Default*__: "docker.io/library"
+
