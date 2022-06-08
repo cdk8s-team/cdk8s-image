@@ -44,8 +44,8 @@ new Image(scope: Construct, id: string, props: ImageProps)
   * **dir** (<code>string</code>)  The docker build context directory (where `Dockerfile` is). 
   * **buildArgs** (<code>Array<[BuildArg](#cdk8s-image-buildarg)></code>)  List of build args to pass to the build action. __*Optional*__
   * **file** (<code>string</code>)  Path to Dockerfile. __*Optional*__
-  * **name**? | <code>string</code> | Tag for tagging the image.<br/>__*Optional*__
-  * **tag**? | <code>string</code> | Path to Dockerfile.<br/>__*Optional*__
+  * **name**? (<code>string</code>) Tag for tagging the image.<br/>__*Optional*__
+  * **tag**?  (<code>string</code>) Path to Dockerfile.<br/>__*Optional*__
 
   * **platform** (<code>string</code>)  Set to specify the target platform for the build output, (for example, linux/amd64, linux/arm64, or darwin/amd64). __*Optional*__
   * **registry** (<code>string</code>)  The registry URL to use. __*Default*__: "docker.io/library"
