@@ -45,17 +45,19 @@ export interface ImageProps {
   readonly buildArgs?: BuildArg[];
 
   /**
+   * Path to Dockerfile
+   */
+  readonly file?: string;
+
+  /**
    * Name for tagging the image
    */
   readonly name?: string;
+
   /**
    * Tag for tagging the image
    */
   readonly tag?: string;
-  /**
-   * Path to Dockerfile
-   */
-  readonly file?: string;
 
   /**
    * Set to specify the target platform for the build output, (for example, linux/amd64, linux/arm64, or darwin/amd64).
