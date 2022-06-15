@@ -50,7 +50,7 @@ export interface ImageProps {
   readonly file?: string;
 
   /**
-   * Name for the image
+   * Name for the image.
    * Docker convention is {registry_name}/{name}:{tag}
    * Visit https://docs.docker.com/engine/reference/commandline/tag/ for more information
    * @default - auto-generated name
