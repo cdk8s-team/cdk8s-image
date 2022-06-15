@@ -50,6 +50,8 @@ new Image(scope: Construct, id: string, props: ImageProps)
   * **tag** (<code>string</code>)  Tag for the image. __*Default*__: "latest"
 
 
+  
+
 ### Properties
 
 
@@ -89,5 +91,6 @@ Name | Type | Description
 **platform**? | <code>string</code> | Set to specify the target platform for the build output, (for example, linux/amd64, linux/arm64, or darwin/amd64).<br/>__*Optional*__
 **registry**? | <code>string</code> | The registry URL to use.<br/>__*Default*__: "docker.io/library"
 **tag**? | <code>string</code> | Tag for the image.<br/>__*Default*__: "latest"
+
 
 
