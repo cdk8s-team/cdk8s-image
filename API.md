@@ -49,8 +49,9 @@ new Image(scope: Construct, id: string, props: ImageProps)
   * **registry** (<code>string</code>)  The registry URL to use. __*Default*__: "docker.io/library"
   * **tag** (<code>string</code>)  Tag for the image. __*Default*__: "latest"
 
+  
 
- 
+
 ### Properties
 
 
