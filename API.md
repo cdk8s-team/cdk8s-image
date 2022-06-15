@@ -50,7 +50,7 @@ new Image(scope: Construct, id: string, props: ImageProps)
   * **tag** (<code>string</code>)  Tag for the image. __*Default*__: "latest"
 
 
- 
+
 ### Properties
 
 
