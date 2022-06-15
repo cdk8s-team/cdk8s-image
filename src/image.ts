@@ -50,6 +50,22 @@ export interface ImageProps {
   readonly file?: string;
 
   /**
+   * Name for the image.
+   * Docker convention is {registry_name}/{name}:{tag}
+   * Visit https://docs.docker.com/engine/reference/commandline/tag/ for more information
+   * @default - auto-generated name
+   */
+  readonly name?: string;
+
+  /**
+   * Tag for the image.
+   * Docker convention is {registry_name}/{name}:{tag}
+   * Visit https://docs.docker.com/engine/reference/commandline/tag/ for more information
+   * @default "latest"
+   */
+  readonly tag?: string;
+
+  /**
    * Set to specify the target platform for the build output, (for example, linux/amd64, linux/arm64, or darwin/amd64).
    */
   readonly platform?: string;
@@ -62,7 +78,7 @@ export interface ImageProps {
  * The image will be built using `docker build` and then pushed through `docker
  * push`. The URL of the pushed image can be accessed through `image.url`.
  *
- * If you push to a registry other then docker hub, you can specify the registry
+ * If you push to a registry other than docker hub, you can specify the registry
  * URL through the `registry` option.
  */
 export class Image extends Construct {
@@ -74,7 +90,9 @@ export class Image extends Construct {
   constructor(scope: Construct, id: string, props: ImageProps) {
     super(scope, id);
     const registry = props.registry ?? 'docker.io/library';
-    const tag = `${registry}/${Names.toDnsLabel(this)}`;
+    const name = props.name || Names.toDnsLabel(this);
+    const tag = props.tag || 'latest';
+    const fullTag = `${registry}/${name}:${tag}`;
     const allBuildArgs: string[] = [];
     props.buildArgs?.forEach((arg) => {
       allBuildArgs.push('--build-arg');
@@ -87,16 +105,16 @@ export class Image extends Construct {
     if (props.platform) {
       allBuildArgs.push(`--platform=${props.platform}`);
     }
-    console.error(`building docker image ${tag} from ${props.file ? props.file : props.dir}`);
-    shell('docker', 'build', '-t', tag, props.dir, ...allBuildArgs);
-    console.error(`pushing docker image ${tag} to ${registry}`);
-    const push = shell('docker', 'push', tag);
+    console.error(`building docker image ${fullTag} from ${props.file ? props.file : props.dir}`);
+    shell('docker', 'build', '-t', fullTag, props.dir, ...allBuildArgs);
+    console.error(`pushing docker image ${fullTag} to ${registry}`);
+    const push = shell('docker', 'push', fullTag);
 
     const result = PARSE_DIGEST.exec(push);
     if (!result) {
       throw new Error(`unable to read image digest after push: ${push}`);
     }
 
-    this.url = `${tag}@${result[1]}`;
+    this.url = props.tag ? fullTag:`${registry}/${name}@${result[1]}`;
   }
 }
