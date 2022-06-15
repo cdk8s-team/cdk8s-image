@@ -50,12 +50,18 @@ export interface ImageProps {
   readonly file?: string;
 
   /**
-   * Name for tagging the image
+   * Name for the image
+   * Docker convention is {registry_name}/{name}:{tag}
+   * Visit https://docs.docker.com/engine/reference/commandline/tag/ for more information
+   * @default - auto-generated name
    */
   readonly name?: string;
 
   /**
-   * Tag for tagging the image
+   * Tag for the image.
+   * Docker convention is {registry_name}/{name}:{tag}
+   * Visit https://docs.docker.com/engine/reference/commandline/tag/ for more information
+   * @default "latest"
    */
   readonly tag?: string;
 
@@ -72,7 +78,7 @@ export interface ImageProps {
  * The image will be built using `docker build` and then pushed through `docker
  * push`. The URL of the pushed image can be accessed through `image.url`.
  *
- * If you push to a registry other then docker hub, you can specify the registry
+ * If you push to a registry other than docker hub, you can specify the registry
  * URL through the `registry` option.
  */
 export class Image extends Construct {
