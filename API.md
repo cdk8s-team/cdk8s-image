@@ -51,7 +51,6 @@ new Image(scope: Construct, id: string, props: ImageProps)
 
 
   
-
 ### Properties
 
 
