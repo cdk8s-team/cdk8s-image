@@ -23,7 +23,7 @@ Represents a docker image built during synthesis from a context directory (`dir`
 The image will be built using `docker build` and then pushed through `docker
 push`. The URL of the pushed image can be accessed through `image.url`.
 
-If you push to a registry other then docker hub, you can specify the registry
+If you push to a registry other than docker hub, you can specify the registry
 URL through the `registry` option.
 
 __Implements__: [IConstruct](#constructs-iconstruct)
