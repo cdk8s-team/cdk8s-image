@@ -103,7 +103,8 @@ export class Image extends Construct {
       allBuildArgs.push(props.file);
     }
     if (props.platform) {
-      allBuildArgs.push(`--platform=${props.platform}`);
+      allBuildArgs.push('--platform');
+      allBuildArgs.push(props.platform);
     }
     console.error(`building docker image ${fullTag} from ${props.file ? props.file : props.dir}`);
     shell('docker', 'build', '-t', fullTag, props.dir, ...allBuildArgs);
