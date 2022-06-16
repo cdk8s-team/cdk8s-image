@@ -118,7 +118,7 @@ test('platform specified', () => {
   // THEN
   expect(image.url).toEqual('docker.io/library/test-my-image-c80f3600@sha256:a1b2c3');
   expect(mock).toBeCalledTimes(2);
-  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600:latest', 'foobar', '--platform=linux/x86_64') ;
+  expect(mock).toBeCalledWith('docker', 'build', '-t', 'docker.io/library/test-my-image-c80f3600:latest', 'foobar', '--platform', 'linux/x86_64') ;
   expect(mock).toBeCalledWith('docker', 'push', 'docker.io/library/test-my-image-c80f3600:latest');
 });
 
