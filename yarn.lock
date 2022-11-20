@@ -1439,10 +1439,10 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk8s@2.5.48:
-  version "2.5.48"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.5.48.tgz#44ed730f2c3bd5574aebb8c997ac32c5ea12d679"
-  integrity sha512-zumi4Cs9mUZkCtuOBGp9l3FF6hKQEBT5ae1qnU/T2hONoQf4Xs57JjAoH/4kbAIKprM4lLzxl4yRfjlWSHGcKw==
+cdk8s@2.5.50:
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.5.50.tgz#c0c03530bee9a183419c1b010bffa9b4dd422334"
+  integrity sha512-mx7UQeTiLwSzJ5rF15YmJIFc8WoLEHlBh/AKBGgrKwbG0Qs88/97bJIYb75mpOGGRw3PlW/4p9SgQ8JK6KIKIQ==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.15.2"
@@ -1643,10 +1643,10 @@ console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
-constructs@10.1.164:
-  version "10.1.164"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.164.tgz#3e73506fffb9f28681abd20d9ac1b69e82b0fd5a"
-  integrity sha512-nUd43oMqE3JojI3qfbiWMOLJYsbnvN0EyAmhsOrKKxmBP649z5IOR8ILOyrhDEHDUia/h9FkfD8oUv4QBimMSw==
+constructs@10.1.165:
+  version "10.1.165"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.165.tgz#618b850ba77fa871899c0d1697732e94656e6fdf"
+  integrity sha512-szFeIH645IjQPqoXMuxzrPPhngpd2braMGBXMNoSnTaQDUFS4j+47ReecefYI1hAkzmEFweXuyEiIFvj4O/gCg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4889,10 +4889,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.28:
-  version "0.65.28"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.28.tgz#12edf8ebb259f38b9bd54772193fcfb9bdfa6b16"
-  integrity sha512-ygc9dKLUKe23VlmEmEbE09lcJMmkd64pCxZxtfR7s3c4jNlOSGAMNE/t3mdedUIBnk6D3BNWbCWAJgHrLCSa3A==
+projen@^0.65.29:
+  version "0.65.29"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.29.tgz#1762d160efe336da6c7161527ddc86b2eb695660"
+  integrity sha512-+wQjiGlhd3/I+ZYENMW0jj75tarV9Rjnvt6HskETHwTl4eJTfiU9YTZdodn5klLHmItiUUqQffjhYk7J68Ix2A==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
