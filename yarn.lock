@@ -1450,10 +1450,10 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk8s@2.6.10:
-  version "2.6.10"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.6.10.tgz#bf9146b83bc0f2a4e535cde6d01d54e9824c3566"
-  integrity sha512-sti2Un0jJuQbNIsM5Yp8bP1mIQfFywxUAThe8PggAMlPh4d/Wful3WzeoLFYcHGlBHIZBYAdVInSgSUwAVU0nQ==
+cdk8s@2.6.12:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.6.12.tgz#7d232df1f1d273261ba1550c28bdd55793a0a61b"
+  integrity sha512-ZY8Ua2lixoIlMOH60LVgTC4a1Y1zz2jkH8g/ZBvaq9FEJo8soRsk4TlC3i6aErbnWJZIMOzbf+K2O/PxEkdg7Q==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.15.2"
@@ -1593,9 +1593,9 @@ combined-stream@^1.0.8:
     delayed-stream "~1.0.0"
 
 commander@^9.4.1:
-  version "9.4.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.1.tgz#d1dd8f2ce6faf93147295c0df13c7c21141cfbdd"
-  integrity sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
+  integrity sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==
 
 comment-json@4.2.2:
   version "4.2.2"
@@ -1665,10 +1665,10 @@ console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
-constructs@10.1.212:
-  version "10.1.212"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.212.tgz#c1eb6b424b0b29b5582359ef24c64363b38cdf84"
-  integrity sha512-75KvfIzTnSQr6kt2pmin/TmtazN5XgGzm6mFVG18+3TTWWL9TwtzPqJLbW2TQo4o1BMf4YkzI8Ka7tIPHsr+3w==
+constructs@10.1.213:
+  version "10.1.213"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.213.tgz#f5010eb358a82dc2c2c42d53ee69dab326a2762f"
+  integrity sha512-fRaHhYWLfLgGEDY8esJ2Y18FHKFqSWfcCBSSTanAFEHfO5pF4iPhnCBPl19MQ/I6IY1Uj2LnNpNH17RUAfxKRA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
