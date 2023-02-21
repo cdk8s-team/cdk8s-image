@@ -1,8 +1,6 @@
-const { cdk } = require('projen');
+const { Cdk8sTeamJsiiProject } = require('@cdk8s/projen-common');
 
-const project = new cdk.JsiiProject({
-  authorUrl: 'https://aws.amazon.com',
-  authorName: 'Amazon Web Services',
+const project = new Cdk8sTeamJsiiProject({
   keywords: [
     'cdk8s',
     'docker',
@@ -13,22 +11,13 @@ const project = new cdk.JsiiProject({
     'constructs',
     'cdk8s',
   ],
+  devDeps: [
+    '@cdk8s/projen-common',
+  ],
   name: 'cdk8s-image',
-  minNodeVersion: '14.17.0',
   description: 'Build & Push local docker images inside CDK8s applications',
-  repository: 'https://github.com/cdk8s-team/cdk8s-image',
   defaultReleaseBranch: 'main',
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
-  autoApproveOptions: {
-    allowedUsernames: ['cdk8s-automation'],
-    secret: 'GITHUB_TOKEN',
-  },
-  autoApproveUpgrades: true,
-
-  publishToPypi: {
-    distName: 'cdk8s-image',
-    module: 'cdk8s_image',
-  },
 });
 
 project.synth();
