@@ -14,7 +14,7 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
-    if: github.repository == cdk8s-team/cdk8s-image
+    if: github.repository == 'cdk8s-team/cdk8s-image'
     steps:
       - uses: actions/add-to-project@v0.4.0
         with:
