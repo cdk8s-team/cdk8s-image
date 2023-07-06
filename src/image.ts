@@ -108,7 +108,7 @@ export class Image extends Construct {
     console.error(`building docker image ${fullTag} from ${props.file ? props.file : props.dir}`);
     shell('docker', 'build', '-t', fullTag, props.dir, ...allBuildArgs);
     console.error(`pushing docker image ${fullTag} to ${registry}`);
-    const push = shell('docker', 'push', fullTag).toString('utf-8');
+    const push = shell('docker', 'push', fullTag);
 
     const result = PARSE_DIGEST.exec(push);
     if (!result) {
