@@ -1708,10 +1708,10 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk8s@2.35.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.35.0.tgz#679921c21bb088796af7bdfdb0ddc77cfdb3de9c"
-  integrity sha512-+A0Uibd7MFnHvv3lzTpvOHYVgW9hjTzGSEkUyzCObRCOMRb3YxjXYAp2tFCe2xm7mEbstxw1D1UyzByr2/zFIA==
+cdk8s@2.36.0:
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/cdk8s/-/cdk8s-2.36.0.tgz#5537f12e4ce20be1d54629b8a695d1b9ee597497"
+  integrity sha512-s4Sm3MJXXY+HNNVuc7awI9RVlEMOI2YoH+N7o9FVxn+k7tWeLDevFutVJS4nmCanTtxtZXqYMj4KRBK1VdjQRQ==
   dependencies:
     fast-json-patch "^3.1.1"
     follow-redirects "^1.15.2"
@@ -5039,9 +5039,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.10.17"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.10.17.tgz#1f28b024235c2ecc34ce7361c0376d61953b556c"
-  integrity sha512-ZoIbWYJhlgMDoByq1WC6Ys3E76IvNCxgS54tPUFbK5J/nqf/BCJt6xiMPAEa7G1HuyAruG+orUF9uTsTGUZl8g==
+  version "16.10.18"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.10.18.tgz#6f6fcbc57c519e7ad12d370a18de8afdf021b597"
+  integrity sha512-dmfhCMX7+UNrBeftBGb1rMX4Qi6+FOI5cuu1VkLeE4LIazbiEYsdgTG+GQywYry+BR9R3EfOXITYPfgRhcdznw==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
