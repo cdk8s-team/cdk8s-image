@@ -4,6 +4,8 @@
 
 ### Image <a name="Image" id="cdk8s-image.Image"></a>
 
+- *Implements:* constructs.IConstruct, constructs.IDependable
+
 Represents a docker image built during synthesis from a context directory (`dir`) with a `Dockerfile`.
 
 The image will be built using `docker build` and then pushed through `docker
